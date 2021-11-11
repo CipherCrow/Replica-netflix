@@ -104,3 +104,37 @@ main{
     height: 250px;
     display: block;
 }
+
+/* Responsivo */
+@media screen and (max-width: 700px){
+    header .container{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .navegacao{
+        padding-top: 5px;
+    }
+    .destaque-wrapper{
+        max-width: 90%;
+    }
+}
+@media screen and (max-width:600px){
+    .conteudo-destaque{
+        background-position: right;
+    }
+}
+@media screen and (max-width:500px){
+    .destaque-wrapper{
+        margin-left: 20px;
+    }
+    .destaque-descricao{
+        margin-bottom: 30px;
+        font-size: .9rem;
+    }   
+    .botoes-wrapper{
+        text-align: center;
+    }
+    .destaque-botao{
+        margin: 5px 0 0 0;
+    } 
+}
